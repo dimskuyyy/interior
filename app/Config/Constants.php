@@ -92,3 +92,7 @@ define('EVENT_PRIORITY_NORMAL', 100);
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_HIGH instead.
  */
 define('EVENT_PRIORITY_HIGH', 10);
+
+define('URL_POST_KATEGORI', 'artikel/kategori/');
+define('URL_PROJEK', 'produk/');
+define('URL_POST_MEDIA', 'media/');

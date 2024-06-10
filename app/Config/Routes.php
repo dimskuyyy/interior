@@ -32,15 +32,15 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Back'], static function
             $routes->post('delete', 'Media::delete');
         });
 
-        $routes->group('produk', static function ($routes) {
-            $routes->get('/', 'Produk::index');
-            $routes->post('datatable', 'Produk::getDatatable');
-            $routes->post('list', 'Produk::list');
-            $routes->post('media', 'Produk::getMedia');
-            $routes->post('detail', 'Produk::getDetailMedia');
-            $routes->post('form', 'Produk::form');
-            $routes->post('save', 'Produk::save');
-            $routes->post('delete', 'Produk::delete');
+        $routes->group('projek', static function ($routes) {
+            $routes->get('/', 'Projek::index');
+            $routes->post('datatable', 'Projek::getDatatable');
+            $routes->post('list', 'Projek::list');
+            $routes->post('media', 'Projek::getMedia');
+            $routes->post('detail', 'Projek::getDetailMedia');
+            $routes->post('form', 'Projek::form');
+            $routes->post('save', 'Projek::save');
+            $routes->post('delete', 'Projek::delete');
         });
 
         $routes->group('kontak', static function ($routes) {
