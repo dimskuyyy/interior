@@ -7,6 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+$routes->get('media/(:segment)', '\App\Controllers\Front\MediaAccess::viewMedia/$1');
+
 $routes->group('admin', ['namespace' => 'App\Controllers\Back'], static function ($routes) {
 
     $routes->get('logout', 'Auth::logout');
