@@ -34,10 +34,10 @@ $request = service('request'); ?>
             <div class="col-lg-6">
                 <nav class="header__menu mobile-menu">
                     <ul>
-                        <li class="<?= ($request->uri->getTotalSegments() == 0) ? 'active' : ''; ?>"><a href="<?= base_url() ?>">Home</a></li>
-                        <li class="<?= ($request->uri->getTotalSegments() >= 2 && $request->uri->getSegment(2) === "tentang-kami") ? 'active' : ''; ?>"><a href="<?= base_url('tentang-kami') ?>">Tentang Kami</a></li>
-                        <li class="<?= ($request->uri->getTotalSegments() >= 2 && $request->uri->getSegment(2) === "projek") ? 'active' : ''; ?>"><a href="<?= base_url('projek') ?>">Projects</a></li>
-                        <li class="<?= ($request->uri->getTotalSegments() >= 2 && $request->uri->getSegment(2) === "kontak") ? 'active' : ''; ?>"><a href="<?= base_url('kontak') ?>">Kontak</a></li>
+                        <li class="<?= ($request->uri->getTotalSegments() == 0) ? 'active' : ''; ?>"><a href="<?= base_url() ?>">Beranda</a></li>
+                        <li class="<?= ($request->uri->getTotalSegments() >= 1 && $request->uri->getSegment(1) === "tentang-kami") ? 'active' : ''; ?>"><a href="<?= base_url('tentang-kami') ?>">Tentang Kami</a></li>
+                        <li class="<?= ($request->uri->getTotalSegments() >= 1 && $request->uri->getSegment(1) === "projek") ? 'active' : ''; ?>"><a href="<?= base_url('projek') ?>">Projek</a></li>
+                        <li class="<?= ($request->uri->getTotalSegments() >= 1 && $request->uri->getSegment(1) === "kontak") ? 'active' : ''; ?>"><a href="<?= base_url('kontak') ?>">Kontak</a></li>
                     </ul>
                 </nav>
             </div>

@@ -225,7 +225,7 @@
 <!-- Testimonial Section End -->
 
 <!-- Call To Action Section Begin -->
-<section class="callto spad set-bg" data-setbg="img/call-bg.jpg">
+<section class="callto spad set-bg" data-setbg="<?=base_url()?>img/call-bg.jpg">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-10 text-center">

@@ -28,4 +28,12 @@ class Beranda extends BaseController
         return view('front/beranda/index',$data);
     }
 
+    public function about(){
+        $data = [
+            'setting' => $this->getSettingsCache('home'),
+            'title' => 'Tentang Kami'
+        ];
+        return view('front/about/index',$data);
+    }
+
 }
