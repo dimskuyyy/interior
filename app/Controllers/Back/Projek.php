@@ -5,6 +5,7 @@ namespace App\Controllers\Back;
 use App\Models\MProjek;
 use App\Libraries\Datatable;
 use App\Models\MMedia;
+use App\Models\MKategori;
 use CodeIgniter\I18n\Time;
 
 class Projek extends BaseController
@@ -78,6 +79,7 @@ class Projek extends BaseController
             }
         }
         $tmp = [];
+        $tmp['kategori'] = (new MKategori())->where('kat_status', 2)->findAll();
         if ($id != null) {
             $tmp['data'] = $data;
             $tmp['media'] = $this->mediaModel->where('media_id', $data['projek_media_id'])->findAll();
@@ -123,7 +125,7 @@ class Projek extends BaseController
                 'projek_konten' => $this->sanitizeContent($req->getVar('konten')),
                 'projek_media_id' => $req->getVar('media'),
                 'projek_status' => $status,
-                'artikel_kategori_id' => $req->getVar('kategori') ?? null,
+                'projek_kategori_id' => $req->getVar('kategori') ?? null,
                 'projek_slug' => $slug,
                 'projek_approve' => $req->getVar('komentar')
             ];
