@@ -5,9 +5,24 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
 
 $routes->get('media/(:segment)', '\App\Controllers\Front\MediaAccess::viewMedia/$1');
+
+$routes->group('', ['namespace' => 'App\Controllers\Front'], static function ($routes) {
+    $routes->get('/', 'Beranda::index');
+    $routes->get('/tentang-kami', 'Beranda::about');
+
+    $routes->group('kontak', static function ($routes) {
+        $routes->get('/', 'Kontak::index');
+        $routes->post('save', 'Kontak::save_kontak');
+    });
+
+    $routes->group('projek', static function ($routes) {
+        $routes->get('/', 'Projek::index');
+        $routes->get('(:segment)', 'Projek::detail/$1');
+    });
+});
+
 
 $routes->group('admin', ['namespace' => 'App\Controllers\Back'], static function ($routes) {
 
