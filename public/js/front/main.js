@@ -117,36 +117,36 @@
         arrows: true,
         fade: true,
         // autoplay:true,
-        asNavFor: '.testimonial__client',
+        // asNavFor: '.testimonial__client',
         prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"><i></i></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"><i></i></i></button>',
       });
-      $('.testimonial__client').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.testimonial__carousel',
-        arrows: false,
-        variableWidth: true,
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 3,
-              }
-            },
-            {
-              breakpoint: 575,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: false
-              }
-            }
-          ]
+    //   $('.testimonial__client').slick({
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.testimonial__carousel',
+    //     arrows: false,
+    //     variableWidth: true,
+    //     centerMode: true,
+    //     focusOnSelect: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 768,
+    //           settings: {
+    //             slidesToShow: 3,
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 575,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+    //             variableWidth: false
+    //           }
+    //         }
+    //       ]
         
-      });
+    //   });
 
     /*---------------------------------
         Logo Carousel
