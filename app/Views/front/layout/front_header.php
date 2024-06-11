@@ -23,9 +23,9 @@ $request = service('request'); ?>
 <!-- Offcanvas Menu End -->
 
 <!-- Header Section Begin -->
-<header class="header">
+<header class="header <?= ($request->uri->getTotalSegments() >= 1 && $request->uri->getSegment(1) === "kontak") ? 'header-normal set-bg" data-setbg="'.base_url().'img/little-header.jpg' : ''; ?>">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-3">
                 <div class="header__logo">
                     <a href="<?= base_url() ?>"><img src="<?= isset($setting['logo']) ? $setting['logo']['set_value'] : base_url('img/logo.png') ?>" alt="" style="height: 43px;" /></a>

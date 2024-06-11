@@ -49,6 +49,9 @@ use function PHPUnit\Framework\isNull;
     <script src="<?=base_url()?>js/front/owl.carousel.min.js"></script>
     <script src="<?=base_url()?>js/front/slick.min.js"></script>
     <script src="<?=base_url()?>js/front/main.js"></script>
+    <script src="<?php echo base_url() ?>plugins/toastr/toastr.min.js"></script>
+    <script src="<?php echo base_url() ?>js/base.js"></script>
+    <script src="<?php echo base_url() ?>js/wbpanel.js"></script>
     <script>
         var url = '<?= base_url() ?>';
     </script>
