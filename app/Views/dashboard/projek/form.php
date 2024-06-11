@@ -284,6 +284,115 @@ helper(['form']);
                             Pellentesque eleifend semper rhoncus. Aliquam nunc mauris, imperdiet gravida malesuada sit, semper non erat. Integer dictum laoreet purus, at pretium felis pharetra sit.
                         </blockquote>
                         <p></p>`
+                    },
+                    {
+                        title: 'Template Projek 1',
+                        description: 'New Template Project',
+                        content: `
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <img src="<?=base_url()?>img/project/details/details-1.jpg" alt="">
+                                            <img src="<?=base_url()?>img/project/details/details-3.jpg" alt="">
+                                            <img src="<?=base_url()?>img/project/details/details-5.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <img src="<?=base_url()?>img/project/details/details-2.jpg" alt="">
+                                            <img src="<?=base_url()?>img/project/details/details-4.jpg" alt="">
+                                            <img src="<?=base_url()?>img/project/details/details-6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="project__sidebar">
+                                        <div class="project__sidebar__about">
+                                            <h2>Office Building Creative</h2>
+                                            <p>Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic
+                                                grids. We propose and discuss design rules for functional metasurfaces with randomly
+                                            placed.</p>
+                                            <p>Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non
+                                            tellus id gravida. Cras neque dolor, volutpat et hendrerit et.</p>
+                                        </div>
+                                        <div class="product__details__widget">
+                                            <div class="product__details__widget__item">
+                                                <span>Clients:</span>
+                                                <h4>John Smith</h4>
+                                            </div>
+                                            <div class="product__details__widget__item">
+                                                <span>Location:</span>
+                                                <p>101 E 129th St, East Chicago, US</p>
+                                            </div>
+                                            <div class="product__details__widget__item">
+                                                <span>Location:</span>
+                                                <p>Decoration, building, Office.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `
+                    },
+                    {
+                        title: 'Template Projek 2',
+                        description: 'New Template Project',
+                        content: `
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="blog__details__content">
+                                        <div class="blog__details__title">
+                                            <ul>
+                                                <li>December 20, 2019 </li>
+                                                <li>By John Doe</li>
+                                                <li>Planning</li>
+                                            </ul>
+                                            <h2>Target and Amazon Shopping List for Home Stagers</h2>
+                                            <img src="<?=base_url()?>img/blog/details/blog-details.jpg" alt="">
+                                            <p>Forget Ebay and other forms of advertising for your property that costs you hard earned
+                                                money. Properties have ready several locations around the world to take your free
+                                            listings for any luxury property you have.</p>
+                                        </div>
+                                        <div class="blog__details__text">
+                                            <p>Each location web site is purpose built so every Search Engine will pick up new listings
+                                                within minutes. This way your customers only have to type in keywords relating to their
+                                                search for a luxury home and the Search Engine will show the Invest Asset web site
+                                            applicable to their location they are looking for.</p>
+                                            <p>Most real estate companies are way too busy with selling their client’s properties to put
+                                                any effort forth to their web site. Hence, making it difficult for web surfers to find
+                                            their listings.</p>
+                                        </div>
+                                        <div class="blog__item__quote">
+                                            <p>“Without question this is the stager you want to use! Jennifer staged a hard to sell home
+                                            for me and we sold it fast! …. Jennifer made it possible.”</p>
+                                            <span>Martin Lockhart</span>
+                                        </div>
+                                        <div class="blog__details__text">
+                                            <p>Now times have changed and we at Investment Assets Properties are thinking of the
+                                                customer before the business. If you have a property in a location not listed at
+                                                Investment Assets Properties. Don’t worry. A quick email to us will ensure your location
+                                            is built to accommodate your listing.</p>
+                                            <p>Selling your luxury home, condominium or property should not be a painstaking event. It
+                                                should be easy and stress free and it should be able to be advertised on a global scale
+                                                for free. Investment Assets Properties can and will do this for you in a hassle free
+                                            way.</p>
+                                        </div>
+                                        <div class="blog__details__pic">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <img src="<?=base_url()?>img/blog/details/bi-1.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <img src="<?=base_url()?>img/blog/details/bi-2.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <img src="<?=base_url()?>img/blog/details/bi-3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `
                     }
                 ],
                 mobile: {
