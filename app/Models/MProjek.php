@@ -99,7 +99,7 @@ class MProjek extends Model
 
         return $builder;
     }
-    public function findprojek($slug)
+    public function findProjek($slug)
     {
         $builder = $this->table('projek');
         $builder->select('*');
@@ -113,7 +113,7 @@ class MProjek extends Model
         return $query->getFirstRow('array');
     }
 
-    public function getRecentprojek(int $limit = 0)
+    public function getRecentProjek(int $limit = 0)
     {
         $builder = $this->table('projek');
         $builder->select('*');

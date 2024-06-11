@@ -8,7 +8,6 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
-use App\Models\MMenu;
 use App\Models\MSetting;
 use App\Models\MProjek;
 
@@ -91,7 +90,7 @@ abstract class BaseController extends Controller
 
             'master_slider' => $this->settingModel->where('set_role', 'master_slider')->where('set_status', 1)->findAll(),
 
-            'list_projek' => $this->projekModel->select('projek_nama, projek_slug')->where('projek_status', 2)->findAll(),
+            'list_projek' => $this->projekModel->select('projek_nama, projek_slug')->where('projek_status', 2)->findAll(6),
         ];
         // Save into the cache for 1 hours
         cache()->save('setting', $setting, 3600);
