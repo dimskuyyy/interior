@@ -20,6 +20,7 @@ $routes->group('', ['namespace' => 'App\Controllers\Front'], static function ($r
     $routes->group('projek', static function ($routes) {
         $routes->get('/', 'Projek::index');
         $routes->get('(:segment)', 'Projek::detail/$1');
+        $routes->get('kategori/(:segment)', 'Projek::kategoriPost/$1');
     });
 });
 

@@ -1,27 +1,20 @@
-<nav aria-label="<?= lang('Pager.pageNavigation') ?>">
-    <ul class="pagination">
-        <?php if ($pager->hasPreviousPage()) : ?>
-            <li>
+<div class="row">
+    <div class="col-lg-12" aria-label="<?= lang('Pager.pageNavigation') ?>">
+        <div class="blog__pagination">
+            <?php if ($pager->hasPreviousPage()) : ?>
                 <a href="<?= $pager->getPreviousPage() ?>" aria-label="<?= lang('Pager.previous') ?>">
-                    <span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+                    <i class="fa fa-angle-double-left"></i>
                 </a>
-            </li>
-        <?php endif ?>
-        <li class="divider"></li>
-        <?php foreach ($pager->links() as $link) : ?>
-            <li <?= $link['active'] ? 'class="active"' : '' ?>>
-                <a href="<?= $link['uri'] ?>">
+            <?php endif ?>
+            <?php foreach ($pager->links() as $link) : ?>
+                <a href="<?= $link['uri'] ?>" <?= $link['active'] ? 'class="active"' : '' ?>>
                     <?= $link['title'] ?>
                 </a>
-            </li>
-        <?php endforeach ?>
-        <li class="divider"></li>
-        <?php if ($pager->hasNextPage()) : ?>
-            <li>
-                <a href="<?= $pager->getNextPage() ?>" aria-label="<?= lang('Pager.next') ?>">
-                    <span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+            <?php endforeach ?>
+            <?php if ($pager->hasNextPage()) : ?>
+                <a href="<?= $pager->getNextPage() ?>" aria-label="<?= lang('Pager.next') ?>"><i class="fa fa-angle-double-right"></i>
                 </a>
-            </li>
-        <?php endif ?>
-    </ul>
-</nav>
+            <?php endif ?>
+        </div>
+    </div>
+</div>
